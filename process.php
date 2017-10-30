@@ -117,7 +117,7 @@ class dijkstra
 }
 
 $start_time=microtime(true);
-header('Content-Type:text/json;charset=UTF-8');
+header('Content-Type: application/json');
 
 if (!isset($_POST['data']) || !is_array($_POST['data']))
 {
