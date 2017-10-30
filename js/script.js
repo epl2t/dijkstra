@@ -1,5 +1,7 @@
 var mapWidth=30;
 var mapHeight=30;
+var wallDencity=0.9;
+var wallSize=4;
 window.map=[[]];
 
 function initMap()
@@ -11,6 +13,34 @@ function initMap()
         }
         window.map[i]=row;
     }
+    for (var i=0; i<mapHeight; i++) {
+        for (var j=0; j<mapWidth; j++) {
+            wall=Math.random()>wallDencity?9:0;
+            if (wall==9)
+            {
+                thisWallSize=Math.random()*wallSize;
+                thisWallSize2=Math.random()*wallSize;
+                for (k=0;k<thisWallSize;k++)
+                {
+                    for (l=0;l<thisWallSize2;l++)
+                    {
+                        if (i+k<mapHeight && j+l<mapWidth)
+                        {
+                            window.map[i+k][j+l]=9;
+                        }
+
+                    }
+                }
+            }
+            else
+            {
+                if (window.map[i][j]==0)
+                {}
+//                window.map[i][j]=0;
+            }
+        }
+    }
+
     window.map[0][0]=1;
     window.map[mapHeight-1][mapWidth-1]=2;
 }
@@ -21,7 +51,7 @@ function showMap()
     for (var i=0; i<mapHeight; i++) {
         displayRow='<div class="map-row">';
         for (var j=0; j<mapWidth; j++) {
-            displayRow=displayRow+'<div class="point-'+window.map[i][j]+'" data-x="'+j+'" data-y="'+i+'"></div>';
+            displayRow=displayRow+'<div class="point-'+(window.map[i][j]==9?'9-'+checkPoint(j,i):window.map[i][j])+'" data-x="'+j+'" data-y="'+i+'"></div>';
         }
         displayRow=displayRow+'</div>';
         displayMap=displayMap+displayRow;
