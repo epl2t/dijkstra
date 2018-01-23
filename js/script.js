@@ -110,7 +110,7 @@ $(document).ready(function() {
     $('#send').click(function() {
         $.ajax({
             type: 'POST',
-            url: '/process.php',
+            url: 'process.php',
             dataType: 'json',
             data: {data: window.map},
             success: function (response) {
