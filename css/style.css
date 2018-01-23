@@ -28,82 +28,82 @@
 
 .map-row .point-9-0, .map-row .point-9
 {
-    background: url('/images/walls.png') 0 0;
+    background: url('../images/walls.png') 0 0;
 }
 
 .map-row .point-9-1
 {
-    background: url('/images/walls.png') -16px 0;
+    background: url('../images/walls.png') -16px 0;
 }
 
 .map-row .point-9-2
 {
-    background: url('/images/walls.png') -32px 0;
+    background: url('../images/walls.png') -32px 0;
 }
 
 .map-row .point-9-3
 {
-    background: url('/images/walls.png') -48px 0;
+    background: url('../images/walls.png') -48px 0;
 }
 
 .map-row .point-9-4
 {
-    background: url('/images/walls.png') 0 -16px;
+    background: url('../images/walls.png') 0 -16px;
 }
 
 .map-row .point-9-5
 {
-    background: url('/images/walls.png') -16px -16px;
+    background: url('../images/walls.png') -16px -16px;
 }
 
 .map-row .point-9-6
 {
-    background: url('/images/walls.png') -32px -16px;
+    background: url('../images/walls.png') -32px -16px;
 }
 
 .map-row .point-9-7
 {
-    background: url('/images/walls.png') -48px -16px;
+    background: url('../images/walls.png') -48px -16px;
 }
 
 .map-row .point-9-8
 {
-    background: url('/images/walls.png') 0 -32px;
+    background: url('../images/walls.png') 0 -32px;
 }
 
 .map-row .point-9-9
 {
-    background: url('/images/walls.png') -16px -32px;
+    background: url('../images/walls.png') -16px -32px;
 }
 
 .map-row .point-9-10
 {
-    background: url('/images/walls.png') -32px -32px;
+    background: url('../images/walls.png') -32px -32px;
 }
 
 .map-row .point-9-11
 {
-    background: url('/images/walls.png') -48px -32px;
+    background: url('../images/walls.png') -48px -32px;
 }
 
 .map-row .point-9-12
 {
-    background: url('/images/walls.png') 0 -48px;
+    background: url('../images/walls.png') 0 -48px;
 }
 
 .map-row .point-9-13
 {
-    background: url('/images/walls.png') -16px -48px;
+    background: url('../images/walls.png') -16px -48px;
 }
 
 .map-row .point-9-14
 {
-    background: url('/images/walls.png') -32px -48px;
+    background: url('../images/walls.png') -32px -48px;
 }
 
 .map-row .point-9-15
 {
-    background: url('/images/walls.png') -48px -48px;
+    background: url('../images/walls.png') -48px -48px;
 }
 
 .waypoint
